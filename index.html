@@ -1,111 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media of Shubham</title>
-    <style>
-        body{
-            margin:0px;
-            padding:0px;
-            background-color: rgb(36, 35, 35);
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        .cont{
-            width:100vw;
-            height: 100vh;
-            display: flex;
-            /* justify-content: center; */
-            align-items: center;
-            flex-direction: column;
-        }
-        .cont::before{
-            content:"";
-            background: url('codingBg.jpg') no-repeat center center/cover;
-            position: absolute;
-            width:100%;
-            height:100%;
-            z-index: -1;
-            opacity: .8;
-        }
-        .cont h1{
-            color:#fff;
-            font-size: 3.8rem;
-            text-shadow: 3px 3px 1px black;
-        }
-        .box{
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid black;
-            background-color: #8acdcd;
-            border-radius: 10px;
-            box-sizing: border-box;
-            width:300px;
-            height:80px;
-            margin:5px;
-        }
-        #box-1{
-            margin-top: 20px;
-        }
-        .box{
-            padding: 40px 150px;
-        }
-        .box a{
-            font-size: 1.8rem;
-            text-decoration: none;
-            color:black;
-            text-shadow: 2px 2px 1px white;
-        }
-        @media only screen and (max-width:300px){
-            .cont h1{
-                font-size: 1.4rem;
-            }
-            .box{
-                width:100px;
-                height: 25px;
-            }
-            .box a{
-                font-size: 0.8rem;
-            }
-        }
-        @media only screen and (min-width:300px) and (max-width:500px) {
-            .cont h1{
-                font-size: 1.8rem;
-            }
-            .box{
-                width:200px;
-                height: 40px;
-            }
-            .box a{
-                font-size: 1rem;
-            }
-        }
-        @media only screen and (min-width:500px) and (max-width:700px){
-            .cont h1{
-                font-size: 2.8rem;
-            }
-            .box{
-                width:250px;
-                height: 60px;
-            }
-            .box a{
-                font-size: 1.4rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="cont">
-        <h1>Welcome To My Website</h1>
-        <div class="box" id="box-1"><a href="https://linkedin.com/in/shubhamjaiswar" target="_blank">Linkedin</a></div>
-        <div class="box" id="box-2"><a href="https://github.com/shubhamjaiswar43" target="_blank">Github</a></div>
-        <div class="box" id="box-3"><a href="https://instagram.com/shubham_jaiswar_43" target="_blank">Instagram</a></div>
-        <div class="box" id="box-4"><a href="https://www.facebook.com/shubham.jaiswar.123276?mibextid=ZbWKwL" target="_blank">Fackbook</a></div>
-        <div class="box" id="box-5"><a href="https://t.me/shubham_jaiswar_43" target="_blank">Telegram</a></div>
-        <div class="box" id="box-6"><a href="https://snapchat.com/add/shubham_4701" target="_blank">Snapchat</a></div>
-    </div>
+    <div id="root"></div>
 </body>
+<script src="./script.js"></script>
 </html>
